@@ -74,7 +74,7 @@ function getRandomQuote() {
 
 // Access quote object properties and build an html string and display it to the page.
 function printQuote() {
-  let randomQuote = getRandomQuote();
+  const randomQuote = getRandomQuote();
   let html = `<p class="quote">${randomQuote.quote}</p>
               <p class="source">${randomQuote.source}`;
   if ( randomQuote.citation ) {
@@ -93,14 +93,14 @@ function printQuote() {
 https://www.w3schools.com/jsref/met_win_setinterval.asp */
 setInterval(printQuote, 10000);
 
-/* function to randomly update background color with every click
+/* Function to randomly update background color with every click
 https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
 */
 function randomBgColor() {
-    let x = Math.floor(Math.random() * 256);
-    let y = Math.floor(Math.random() * 256);
-    let z = Math.floor(Math.random() * 256);
-    let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    const bgColor = "rgb(" + x + "," + y + "," + z + ")";
     return document.body.style.background = bgColor;
 }
 // Automatically change background color every 10 seconds along with quote
