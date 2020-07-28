@@ -1,2 +1,2 @@
 # a_random_quote_generator-v1
- A random quote generator written with JavaScript
+ Display a different quote and update the background color in the browser every time the user clicks the "Show another quote" button.
